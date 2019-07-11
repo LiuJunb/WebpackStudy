@@ -155,7 +155,7 @@ module.exports = showHelloWorld;
 
 
 
-一切文件就绪，在项目根目录下执行 `webpack` 命令运行 Webpack 构建，你会发现目录下多出一个 `dist`目录，里面有个 `bundle.js` 文件， `bundle.js` 文件是一个可执行的 JavaScript 文件，它包含页面所依赖的两个模块 `main.js` 和 `common.js` 及内置的 `webpackBootstrap` 启动函数。 这时你用浏览器打开 `index.html` 网页将会看到：弹出 `Webpack的安装和使用`的对话框
+一切文件就绪，在项目根目录下执行 `webpack` 命令（执行该命令后会自动找到webpack.config.js配置文件并开始执行构建）运行 Webpack 构建，你会发现目录下多出一个 `dist`目录，里面有个 `bundle.js` 文件， `bundle.js` 文件是一个可执行的 JavaScript 文件，它包含页面所依赖的两个模块 `main.js` 和 `common.js` 及内置的 `webpackBootstrap` 启动函数。 这时你用浏览器打开 `index.html` 网页将会看到：弹出 `Webpack的安装和使用`的对话框
 
 
 
@@ -198,7 +198,7 @@ You can also set it to 'none' to disable any default behavior. Learn more: https
 
 ```
 
-
+[源码下载地址](https://github.com/LiuJunb/WebpackStudy/tree/master/webpackCode)
 
 ## 4.总结
 
