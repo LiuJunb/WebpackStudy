@@ -12,6 +12,12 @@ yarn-debug.log*
 yarn-error.log*
 /logs
 /webpackCode/05-配置-Loader/01-配置css-Loader/node_modules
+/webpackCode/05-配置-Loader/01-配置css-Loader参数/node_modules
+
+/webpackCode/05-配置-Loader/02-配置PostCss-Loader/node_modules
+/webpackCode/05-配置-Loader/02-配置scss-loader/node_modules
+
+
 
 
 # Editor directories and files

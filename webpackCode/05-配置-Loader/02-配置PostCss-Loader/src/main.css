@@ -1,0 +1,9 @@
+/* 1.使用下一代 CSS 语法, 定义变量 */
+:root {
+  --red: red;
+}
+body {
+  background-color:var(--red);
+  /* 2.这个属性会自动添加前缀 */
+  display: flex;
+}
