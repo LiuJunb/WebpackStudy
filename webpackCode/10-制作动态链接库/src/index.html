@@ -1,0 +1,36 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<div id="app"></div>
+<!--导入 Webpack 输出的 JavaScript 文件-->
+<script src="../dist/jquery.dll.js"></script>
+<script src="../dist/bundle.js"></script>
+</body>
+</html>
+<!-- 
+  下面的数据当时打包时是包含了polyfill一起打包。
+  1.没有使用jquery动态链接库时：
+      构建时间1451ms ; 
+      jquery框架打包到bundle.js中；
+      bundle.js大小750k
+
+  2.使用jquery.dll.js动态链接库时：
+      构建时间1333ms ; 
+      jquery框架没有直接打包到bundle.js中,而是打包了引用了动态链接库的代码；
+      最后需要单独在index.html引入jquery.dll.js动态链接库；
+      bundle.js大小441k
+
+  3.如果使用 Externals, 指定jquery框架是不需要打包
+      构建时间1296ms ; 
+      jquery框架没有打包到bundle.js中；
+      最后需要单独在index.html使用script标签引入jquery.js库；
+      bundle.js大小440k   
+      
+  4.Externals vs DLL 
+    Externals可以对某一个第三方框架和库放到运行环境的全局变量中
+      例如：vue放到到运行环境的全局变量中 或者 vuex放到到运行环境的全局变量中
+    DLL可以对某一类第三方的框架和库打包到一个动态库中。
+      例如：vue-router 、vuex 、vue 等打包到一个vue.dll.js中
+ -->

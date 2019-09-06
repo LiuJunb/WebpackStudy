@@ -10,6 +10,7 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
 /logs
 /webpackCode/05-配置-Loader/01-配置css-Loader/node_modules
 /webpackCode/05-配置-Loader/01-配置css-Loader参数/node_modules
@@ -22,6 +23,10 @@ yarn-error.log*
 
 /webpackCode/06-配置-Plugins/01-提取css到单独文件的插件/node_modules
 
+/webpackCode/06-配置-Plugins/08-配置-devServer/node_modules
+/webpackCode/06-配置-Plugins/09-配置-Externals/node_modules
+
+/webpackCode/06-配置-Plugins/10-制作动态链接库/node_modules
 
 
 

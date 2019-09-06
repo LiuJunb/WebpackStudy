@@ -7,6 +7,10 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, './dist'),
   },
+  externals: {
+    // 把导入语句里的 LJquery 替换成运行环境里的全局变量 jQuery
+    LJquery: 'jQuery'
+  },
   devServer: {
     // 1.指定服务的ip
     host: "localhost",
