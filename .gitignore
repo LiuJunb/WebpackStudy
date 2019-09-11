@@ -24,13 +24,12 @@ yarn-error.log*
 /webpackCode/06-配置-Plugins/01-提取css到单独文件的插件/node_modules
 
 /webpackCode/06-配置-Plugins/08-配置-devServer/node_modules
+
 /webpackCode/06-配置-Plugins/09-配置-Externals/node_modules
-
 /webpackCode/06-配置-Plugins/10-制作动态链接库/node_modules
+/webpackCode/06-配置-Plugins/11-HappyPack增加编译进程/node_modules
 
-
-
-
+/webpackCode/06-配置-Plugins/12-编写自定义Loader/node_modules
 
 # Editor directories and files
 .idea
