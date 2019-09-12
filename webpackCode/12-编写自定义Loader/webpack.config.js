@@ -15,20 +15,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/, // 匹配 .css 结尾的文件,注意test的值不是一个字符串，而是一个正则
+        test: /\.css$/, 
         use: ['style-loader', 'css-loader'],
       },
-      {
-        test: /\.js$/, // 匹配 .js 结尾的文件
-        // use: ['console-loader'],
-        use: [
+      {  
+        test: /\.js$/,// 匹配 .js 结尾的文件,注意test的值不是一个字符串，而是一个正则
+        // use: ['console-loader'], // 使用自定义的 console-loader
+        use:[
           {
-            loader: 'console-loader',
+            loader: 'console-loader', // 使用自定义的 console-loader
             options: {
-              clear: true
+              clear:true // 给自定义的 console-loader 传递options参数
             }
-          },
-        ],
+          }
+        ]
       }
     ]
   }
