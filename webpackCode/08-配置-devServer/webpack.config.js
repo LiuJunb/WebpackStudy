@@ -22,7 +22,7 @@ module.exports = {
         // 例如：fetch('/api/xxxx') 会代理到 https://news-at.zhihu.com/api/xxxx
         // 例如：fetch('http://localhost:9000/api/xxxx') 这种写法会代理失败
         target: 'https://news-at.zhihu.com',
-        ws: true, // 2.允许代理 websockets 协议
+        ws: true, // 2.允许代理 websockets 协议, devServer使用的协议就是 websockets
         changeOrigin: true //3.需要虚拟托管的站点要设计为true。建议设为 true，开发时大部分情况都是虚拟托管的站点
       }
     }

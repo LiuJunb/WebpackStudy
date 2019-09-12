@@ -20,15 +20,15 @@ module.exports = {
       },
       {  
         test: /\.js$/,// 匹配 .js 结尾的文件,注意test的值不是一个字符串，而是一个正则
-        // use: ['console-loader'], // 使用自定义的 console-loader
-        use:[
-          {
-            loader: 'console-loader', // 使用自定义的 console-loader
-            options: {
-              clear:true // 给自定义的 console-loader 传递options参数
+        use:{
+            loader: 'console-loader', // 使用自定义 console-loader
+            options: { // 自定义 console-loader 加载器
+              // 如果为true 就会把js中所有的console.log语法删除
+              // 如果为false则不就会删除
+              clear: true
             }
           }
-        ]
+        
       }
     ]
   }
