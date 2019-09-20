@@ -555,6 +555,8 @@ eval("// 这个注解是：console-loader 自动添加的注释\r\n\r\n\r\n// 1.
 
 ### 3.接收自定Loader的options参数
 
+在webpack.config.js中使用 console-loader加载器的时候，传递一个options参数。
+
 webpack.config.js
 
 ```js
@@ -595,6 +597,8 @@ module.exports = {
 
 
 
+直接使用 loader-utils 工具来获取 console-loader 加载器传入的 options 参数：
+
 console-loader.js
 
 ```js
@@ -624,7 +628,7 @@ module.exports = function (content) {
 };
 ```
 
-
+在项目的根目录执行 `npm run dev` 即可使用该 console-loader 加载器处理 console.log()  的语法
 
 
 

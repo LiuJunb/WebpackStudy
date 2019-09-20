@@ -1,6 +1,7 @@
 // 1.箭头函数 和 const 是es6新的语法。目的是要把es6新的语法转成es5语法
 const showHelloWorld =(content) => {
   alert(new Person().name)
+  console.log(new FormData())
 }
 
 // 2.class 定义类也是es6新的语法。目的是要把es6新的语法转成es5语法

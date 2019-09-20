@@ -1,5 +1,6 @@
 module.exports = function (api) {
   api.cache(true);
+  console.log('===============================')
   console.log(api)
 
   const presets = [ 
@@ -14,6 +15,7 @@ module.exports = function (api) {
           safari: "11.1",
         },
         useBuiltIns: false,
+        // useBuiltIns: 'entry',
       }
     ]
    ];

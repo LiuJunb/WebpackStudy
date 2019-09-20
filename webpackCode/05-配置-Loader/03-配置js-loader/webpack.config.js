@@ -2,6 +2,7 @@
 const path = require('path');
 module.exports = {
   entry: ['@babel/polyfill', './src/main.js'],
+  // entry: ['./src/main.js'],
   output: {
     // 1.指定输出的文件的名称为 bundle.js ( 默认为main.js )
     filename: 'bundle.js',

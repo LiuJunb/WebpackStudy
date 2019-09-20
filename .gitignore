@@ -30,6 +30,7 @@ yarn-error.log*
 /webpackCode/06-配置-Plugins/11-HappyPack增加编译进程/node_modules
 
 /webpackCode/06-配置-Plugins/12-编写自定义Loader/node_modules
+/webpackCode/06-配置-Plugins/13-编写自定义Plugin/node_modules
 
 # Editor directories and files
 .idea
